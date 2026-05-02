@@ -1,0 +1,104 @@
+{
+  "assumptions": {
+    "target_dscr": 1.5,
+    "sba_interest_rate": 0.105,
+    "loan_years": 10,
+    "min_cash_flow": 450000,
+    "max_cash_flow": 650000,
+    "max_multiple_green": 3.8,
+    "yellow_min_dscr": 1.35
+  },
+  "review_sources_keep_all": [
+    "Quiet Light",
+    "Website Closers",
+    "Transworld",
+    "Inbar",
+    "Relocatable"
+  ],
+  "sources": [
+    {
+      "name": "BizBuySell - New Jersey",
+      "url": "https://www.bizbuysell.com/new-jersey-businesses-for-sale/",
+      "enabled": true,
+      "max_links": 35
+    },
+    {
+      "name": "BizBuySell - New York",
+      "url": "https://www.bizbuysell.com/new-york-businesses-for-sale/",
+      "enabled": true,
+      "max_links": 45
+    },
+    {
+      "name": "BizBuySell - New York City",
+      "url": "https://www.bizbuysell.com/new-york/new-york-businesses-for-sale/",
+      "enabled": true,
+      "max_links": 45
+    },
+    {
+      "name": "BizBuySell - Relocatable / Home-Based",
+      "url": "https://www.bizbuysell.com/relocatable-businesses-for-sale/",
+      "enabled": true,
+      "max_links": 50
+    },
+    {
+      "name": "BizQuest - New Jersey",
+      "url": "https://www.bizquest.com/businesses-for-sale-in-new-jersey/",
+      "enabled": true,
+      "max_links": 35
+    },
+    {
+      "name": "BizQuest - New York",
+      "url": "https://www.bizquest.com/businesses-for-sale-in-new-york/",
+      "enabled": true,
+      "max_links": 45
+    },
+    {
+      "name": "BizQuest - Relocatable",
+      "url": "https://www.bizquest.com/relocatable-businesses-for-sale/",
+      "enabled": true,
+      "max_links": 60
+    },
+    {
+      "name": "DealStream - Businesses for Sale",
+      "url": "https://dealstream.com/businesses-for-sale",
+      "enabled": true,
+      "max_links": 50
+    },
+    {
+      "name": "Synergy Business Brokers - New Jersey",
+      "url": "https://synergybb.com/businesses-for-sale/new-jersey/",
+      "enabled": true,
+      "max_links": 35
+    },
+    {
+      "name": "Inbar Group",
+      "url": "https://inbargroup.com/",
+      "enabled": true,
+      "max_links": 35
+    },
+    {
+      "name": "Transworld - Main Listing Search",
+      "url": "https://www.tworld.com/buy-a-business/business-listing-search",
+      "enabled": true,
+      "max_links": 60
+    },
+    {
+      "name": "Transworld - NY",
+      "url": "https://www.tworld.com/locations/new-york/buy-a-business/active-business-listings",
+      "enabled": true,
+      "max_links": 50
+    },
+    {
+      "name": "Website Closers - National Listings",
+      "url": "https://www.websiteclosers.com/businesses-for-sale/",
+      "enabled": true,
+      "max_links": 70
+    },
+    {
+      "name": "Quiet Light - National Listings",
+      "url": "https://quietlight.com/listings/",
+      "enabled": true,
+      "max_links": 70
+    }
+  ]
+}
