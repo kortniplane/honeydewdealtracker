@@ -108,6 +108,50 @@ def likely_listing_link(href: str, text: str):
     combined = f"{href} {text}".lower()
 
     positive = [
+        "business-for-sale",
+        "businesses-for-sale",
+        "listing",
+        "listings",
+        "opportunity",
+        "active-business-listings",
+        "buy-a-business",
+    ]
+
+    negative = [
+        "sold",
+        "sell",
+        "selling",
+        "how-to",
+        "blog",
+        "article",
+        "industry",
+        "industries",
+        "location",
+        "locations",
+        "about",
+        "contact",
+        "valuation",
+        "privacy",
+        "terms",
+        "franchise",
+        "login",
+        "register",
+        "facebook",
+        "linkedin",
+        "instagram",
+        "mailto:",
+        "tel:",
+        "award",
+        "brokers",
+    ]
+
+    if any(n in combined for n in negative):
+        return False
+
+    return any(p in combined for p in positive)
+    combined = f"{href} {text}".lower()
+
+    positive = [
         "listing",
         "listings",
         "business",
