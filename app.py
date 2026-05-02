@@ -51,7 +51,11 @@ else:
     col3.metric("YELLOW", int((df["status"] == "YELLOW").sum()))
     col4.metric("REVIEW", int((df["status"] == "REVIEW").sum()))
 
-    statuses = st.multiselect("Status", ["GREEN", "YELLOW", "REVIEW", "RED"], default=["GREEN", "YELLOW", "REVIEW"])
+    statuses = st.multiselect(
+    "Status",
+    ["GREEN", "YELLOW", "REVIEW - HIGH POTENTIAL", "REVIEW - DATA MISSING", "REVIEW", "RED"],
+    default=["GREEN", "YELLOW", "REVIEW - HIGH POTENTIAL", "REVIEW - DATA MISSING"]
+)
     sources = st.multiselect("Source", sorted(df["source"].unique()), default=sorted(df["source"].unique()))
     filtered = df[df["status"].isin(statuses) & df["source"].isin(sources)].copy()
 
